@@ -11,7 +11,7 @@
   #### -Trivy for security scanning.
   #### -SonarQube for static code analysis.
 ---
-### Corrected Script
+### Command Script
 
 ```bash
 # Update package list
