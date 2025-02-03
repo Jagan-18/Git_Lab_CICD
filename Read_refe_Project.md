@@ -238,10 +238,9 @@ The pipeline will automatically deploy the application to the Kubernetes cluster
 ## Notes
 - Replace placeholders in the scripts (e.g., `<MASTER_NODE_IP>`, `<TOKEN>`, `<HASH>`) with actual values.
 - Ensure the GitLab Runner is properly configured and tagged as `self-hosted`.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+- Ensure that you configure your Kubernetes cluster and Docker registry credentials as GitLab CI/CD environment variables for smooth deployment.
+- The pipeline includes a SonarQube security scan and Trivy scanning to identify vulnerabilities in your code and images.
+- Make sure to replace placeholders such as KUBECONFIG_CONTENT and DOCKER_USERNAME, DOCKER_PASSWORD in the pipeline configuration with your actual values.
 ---
 
 
